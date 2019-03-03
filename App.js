@@ -9,21 +9,6 @@ import {
 
 import Camera from 'react-native-openalpr';
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-    textContainer: {
-        position: 'absolute',
-        top: 100,
-        left: 50,
-    },
-    text: {
-        textAlign: 'center',
-        fontSize: 20,
-    },
-});
-
 export default class App extends React.Component {
     constructor(props) {
         super(props);
@@ -72,3 +57,18 @@ export default class App extends React.Component {
 }
 
 AppRegistry.registerComponent('PlateRecognizer', () => App);
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    textContainer: {
+        position: 'absolute',
+        top: 100,
+        left: 50,
+    },
+    text: {
+        textAlign: 'center',
+        fontSize: 20,
+    },
+});
